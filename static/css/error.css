@@ -1,0 +1,9 @@
+.error {
+  background-color: #ffffff;
+  padding: 20px;
+  height: calc(100vh - 40px);
+}
+
+#__next-prerender-indicator {
+  display: none;
+}

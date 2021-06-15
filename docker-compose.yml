@@ -1,0 +1,16 @@
+version: "3.7"
+networks:
+  shared-network:
+    external:
+      name: cafechi-shared-network
+services:
+  web_client:
+    build:
+      context: .
+      dockerfile: dockerfile_web_client
+    image: cafechi_web_client
+    container_name: cafechi_web_client_01
+    networks:
+      - shared-network
+    ports:
+      - "80:4000"
